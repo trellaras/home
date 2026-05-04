@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JohnKaL | Python Web Projects</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--primary); }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #334155;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);
+            border-color: var(--primary);
+        }
+
+        .card h2 { color: var(--primary); margin-top: 0; }
+        .card p { font-size: 0.95rem; color: #94a3b8; line-height: 1.5; }
+
+        .tag {
+            background: #0ea5e9;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JohnKaL's Lab</h1>
+        <p>A collection of Python-powered web applications.</p>
+    </header>
+
+    <div class="container">
+        <!-- Age Calculator Link -->
+        <a href="https://johnkal.github.io/age-calculator/" class="card">
+            <span class="tag">Logic</span>
+            <h2>Age Calculator</h2>
+            <p>Calculates your exact age in days, hours, and minutes using Python logic.</p>
+        </a>
+
+        <!-- Metaball Link -->
+        <a href="https://johnkal.github.io/metaballs/" class="card">
+            <span class="tag">Math/Physics</span>
+            <h2>Metaball Sim</h2>
+            <p>A real-time physics simulation using Runge-Kutta differential equations.</p>
+        </a>
+
+        <!-- Weather App Link -->
+        <a href="https://johnkal.github.io/weather-app/" class="card">
+            <span class="tag">API</span>
+            <h2>Weather Finder</h2>
+            <p>Real-time weather data fetching for any city in the world.</p>
+        </a>
+    </div>
+
+</body>
+</html>
